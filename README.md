@@ -1,4 +1,4 @@
-# E-Tiquete - Venda de Ingressos com Reserva de Assentos
+# E-Tiquete
 
 Este sistema será desenvolvido como projeto final da disciplina de Engenharia de Sistemas Distribuídos. O E-tiquete é uma plataforma de venda e reserva de ingressos desenvolvida com arquitetura de microsserviços, com foco em confiabilidade e desempenho.
 
