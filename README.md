@@ -1,4 +1,4 @@
-# E-tiquete
+# Etiquete
 
 Plataforma de venda e reserva de ingressos desenvolvida com arquitetura de microsserviços, com foco em confiabilidade, desempenho e consistência em cenários de alta concorrência.
 
