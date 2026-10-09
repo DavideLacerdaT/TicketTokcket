@@ -1,43 +1,12 @@
-# Etiquete
+# E-Tiquete - Venda de Ingressos com Reserva de Assentos
 
-Plataforma de venda e reserva de ingressos desenvolvida com arquitetura de microsserviços, com foco em confiabilidade, desempenho e consistência em cenários de alta concorrência.
+Este sistema será desenvolvido como projeto final da disciplina de Engenharia de Sistemas Distribuídos. O E-tiquete é uma plataforma de venda e reserva de ingressos desenvolvida com arquitetura de microsserviços, com foco em confiabilidade e desempenho.
 
 ## Sobre o projeto
 
-O Etiquete busca evitar problemas comuns em vendas de ingressos de alta demanda, como venda duplicada de assentos, cobranças em duplicidade e reservas abandonadas.
+O Etiquete busca evitar problemas comuns em vendas de ingressos de alta demanda, como venda duplicada de assentos, cobranças em duplicidade e reservas abandonadas. A plataforma permitirá consultar eventos, reservar assentos temporariamente, realizar pagamentos simulados e receber confirmações. Em caso de falha no pagamento ou expiração da reserva, o sistema deverá liberar o assento automaticamente.
 
-A plataforma permitirá consultar eventos, reservar assentos temporariamente, realizar pagamentos simulados e receber confirmações. Em caso de falha no pagamento ou expiração da reserva, o sistema deverá liberar o assento automaticamente.
-
-## Arquitetura
-
-O sistema prevê os seguintes serviços:
-
-- API Gateway
-- Catálogo de Eventos
-- Reserva de Assentos
-- Pedidos
-- Pagamento
-- Notificações
-
-## Tecnologias
-
-- NodeJS + React
-- Postgres
-- Redis
-- Docker Composer
-- GitHub Actions
-
-*A stack definitiva será confirmada durante o desenvolvimento do projeto.*
-
-## Padrões arquiteturais
-
-- Saga com orquestração
-- Transactional Outbox
-- Retry e Dead Letter Queue (DLQ)
-- Circuit Breaker
-- Cache-Aside
-- Database per Service
-- API Gateway
+**Serviços previstos:** API Gateway, Catálogo de Eventos, Reserva de Assentos, Pedidos (orquestrador da SAGA), Pagamento (simulado) e Notificações.
 
 ## Objetivos
 
@@ -48,7 +17,34 @@ O sistema prevê os seguintes serviços:
 - Monitorar o desempenho sob alta concorrência.
 - Garantir a entrega confiável de eventos entre os serviços.
 
+## Tecnologias previstas
+
+| Tecnologia | Descrição |
+|---|---|
+| NodeJS + React | Frameworks de aplicação para backend e frontend |
+| PostgreSQL | Banco de dados relacional com transações ACID |
+| Redis | Banco de dados em memória para cache e dados com expiração |
+| RabbitMQ | Message broker para filas e eventos entre serviços |
+| Docker Compose | Orquestração de contêineres para execução local |
+| GitHub Actions | Plataforma de CI/CD integrada ao GitHub |
+| Testcontainers | Biblioteca para subir dependências reais em contêineres nos testes |
+| Prometheus | Sistema de coleta e armazenamento de métricas |
+| Grafana | Plataforma de dashboards e visualização de métricas |
+
+*A stack definitiva será confirmada durante o desenvolvimento do projeto.*
+
+## Padrões arquiteturais
+
+Os seguintes padrões serão implementados para validar a proposta do projeto:
+
+- SAGA (orquestração)
+- Transactional Outbox
+- Retry e DLQ
+- Circuit Breaker
+- Cache-Aside
+- Database-per-service
+- API Gateway
+
 ## Status
 
 Em desenvolvimento.
-
