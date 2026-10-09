@@ -21,19 +21,11 @@ O sistema prevê os seguintes serviços:
 
 ## Tecnologias
 
-- Java 21
-- Spring Boot
-- PostgreSQL
+- NodeJS + React
+- Postgres
 - Redis
-- RabbitMQ
-- Resilience4j
-- Docker Compose
+- Docker Composer
 - GitHub Actions
-- k6
-- Testcontainers
-- Prometheus
-- Grafana
-- Jaeger
 
 *A stack definitiva será confirmada durante o desenvolvimento do projeto.*
 
